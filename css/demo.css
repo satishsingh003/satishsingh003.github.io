@@ -19,7 +19,7 @@ html, body, .pagewrap {
 }
 
 body {
-	background: #4fc3f7;
+	background: #6c97ab;
 	color: #fff;
 	font-size: 16px;
 	font-weight: 300;
@@ -230,4 +230,22 @@ section p {
 		display: none;
 	}
 
+}
+
+
+#pagewrap {
+    display: none;
+}
+#loading {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(192, 192, 192, 0.5);
+    background-image: url("../img/pageloader.svg");
+    background-repeat: no-repeat;
+    background-position: center;
 }

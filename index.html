@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1"> 
-		<title>Page Loading Effects | Demo 1</title>
+		<title>Satish Kumar Singh | Portfolio</title>
 		<meta name="description" content="My Portfolio/Resume" />
 		<meta name="keywords" content="About Satish Kumar Singh" />
 		<meta name="author" content="Satish Singh" />
@@ -18,14 +18,15 @@
 		<![endif]-->
 	</head>
 	<body>
+		<div id="loading"></div>
 		<div id="pagewrap" class="pagewrap">
 		
 			<div class="container show" id="page-1">
 				<!-- Top Navigation -->
-				<div class="codrops-top clearfix">
+				<!-- <div class="codrops-top clearfix">
 					<a class="codrops-icon codrops-icon-prev" href="http://tympanus.net/Tutorials/CircularProgressButton/"><span>Previous Demo</span></a>
 					<span class="right"><a class="codrops-icon codrops-icon-drop" href="http://tympanus.net/codrops/?p=18880"><span>Back to the Codrops Article</span></a></span>
-				</div>
+				</div> -->
 				<header class="codrops-header">
 					<h1>Satish Kumar Singh<span>Tech enthusiast and Nature lover, Camaraderie. Script Junkie</span></h1>
 				</header>
@@ -48,11 +49,11 @@
 						</nav>
 					</div>
 					<div class="column">
-						<p>To start the page loading animation, click the following link:</p>
-						<p><a class="pageload-link" href="#page-2">Show Page Loader</a></p>
+						<!-- <p>To start the page loading animation, click the following link:</p> -->
+						<p><a class="pageload-link" href="#page-2">My Portfolio</a></p>
 					</div>
 				</section>
-				<section class="related">
+				<!-- <section class="related">
 					<p>If you enjoyed this demo you might also like:</p>
 					<a href="http://tympanus.net/Development/FullscreenOverlayStyles/">
 						<img src="http://tympanus.net/codrops/wp-content/uploads/2014/02/FullscreenOverlayStyles-300x162.jpg" />
@@ -62,16 +63,16 @@
 						<img src="http://tympanus.net/codrops/wp-content/uploads/2014/01/ShapeHoverEffect-300x162.png" />
 						<h3>Shape Hover Effect</h3>
 					</a>
-				</section>
+				</section> -->
 			</div><!-- /container -->
 
 			<!-- The new page dummy; this would be dynamically loaded content -->
 			<div class="container" id="page-2">
 				<!-- Top Navigation -->
-				<div class="codrops-top clearfix">
+				<!-- <div class="codrops-top clearfix">
 					<a class="codrops-icon codrops-icon-prev" href="http://tympanus.net/Tutorials/CircularProgressButton/"><span>Previous Demo</span></a>
 					<span class="right"><a class="codrops-icon codrops-icon-drop" href="http://tympanus.net/codrops/?p=18880"><span>Back to the Codrops Article</span></a></span>
-				</div>
+				</div> -->
 				<section>
 					<h2>This is an example for a new page.</h2>
 					<p><a class="pageload-link" href="#page-1">Go back</a></p>
@@ -102,7 +103,7 @@
 					currentPage = 0,
 					triggerLoading = [].slice.call( pageWrap.querySelectorAll( 'a.pageload-link' ) ),
 					loader = new SVGLoader( document.getElementById( 'loader' ), { speedIn : 100 } );
-
+					//loader.show();
 				function init() {
 					triggerLoading.forEach( function( trigger ) {
 						trigger.addEventListener( 'click', function( ev ) {
@@ -123,7 +124,31 @@
 				}
 
 				init();
+				//document.getElementById( 'loader' ).style.display='none';
+
 			})();
+		//	loader.hide();
+
+		function onReady(callback) {
+    var intervalID = window.setInterval(checkReady, 1000);
+
+    function checkReady() {
+        if (document.getElementsByTagName('body')[0] !== undefined) {
+            window.clearInterval(intervalID);
+            callback.call(this);
+        }
+    }
+}
+
+function show(id, value) {
+    document.getElementById(id).style.display = value ? 'block' : 'none';
+}
+
+onReady(function () {
+    show('pagewrap', true);
+    show('loading', false);
+});
+
 		</script>
 	</body>
 </html>
