@@ -108,7 +108,6 @@ a:hover, a:focus {
 }
 
 section {
-	padding: 3em 1em;
 	text-align: center;
 	clear: both;
 }
@@ -211,7 +210,7 @@ section p {
 }
 
 .pageload-link {
-	padding: 13px 20px;
+	padding: 2px 12px;
 	color: #fff;
 	background: rgba(0,0,0,0.25);
 	text-transform: uppercase;
