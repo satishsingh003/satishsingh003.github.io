@@ -1,241 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1"> 
-		<title>Satish Kumar Singh | Portfolio</title>
-		<meta name="description" content="My Portfolio/Resume" />
-		<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
-		  <!-- CSS Base -->
-        <link rel="stylesheet" type='text/css' media='all' href="static/css/webslides.css">
-		  <!-- Optional - CSS SVG Icons (Font Awesome) -->
-		  <link rel="stylesheet" type="text/css" media="all" href="static/css/svg-icons.css">
-		<meta name="keywords" content="About Satish Kumar Singh" />
-		<meta name="author" content="Satish Singh" />
-		<link rel="shortcut icon" href="../favicon.ico">
-		<link rel="stylesheet" href="css/style.css">
-		<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="css/demo.css" />
-		<link rel="stylesheet" type="text/css" href="css/component.css" />
-		<script src="js/snap.svg-min.js"></script>
-		<!--[if IE]>
-  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
-	</head>
-	<body>
-		<main role="main">
-			<article id="webslides">
-				<section class="bg-primary">
-					<span class="background dark" style="background-image:url('https://source.unsplash.com/xxeAftHHq6E/')"></span>
-					 <div class="wrap aligncenter">
-					   <h1 class="text-landing">Satish Singh</h1>
-					   <p class="text-symbols">Lead Frontend Engineer</p>
-					   <p class="text-symbols">
-					   <p>I design and code beautifully simple things, and I love what I do.</p>
-					   <a href="https://twitter.com/satishsingh03" class="text-white p-2" href="#">
-						<i class="fab fa-twitter fa-2x"></i>
-						</a>
-						<a href="https://www.facebook.com/satish.singh.773981" class="text-white p-2" href="#">
-						<i class="fab fa-facebook fa-2x"></i>
-						</a>
-						<a href="https://www.linkedin.com/in/satish-singh-15406b39/" class="text-white p-2" href="#">
-						<i class="fab fa-linkedin fa-2x"></i>
-						</a>
-					   </p>
-					   <p><a class="button ghost" target="_blank" href="https://drive.google.com/file/d/1PxOYQB78PbRWyGD1pRaWZmibGIV7kcWl/view" title="Download WebSlides for free"><svg class="fa-cloud-download">
-						   <use xlink:href="#fa-cloud-download"></use>
-						 </svg> Resume</a>
-						
-					   </p>
-					 </div>
-				   </section>
-				  <!-- /container -->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Satish Singh | Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+html { scroll-behavior: smooth; }
+body { margin:0; font-family:'Poppins',sans-serif; background:#0f172a; color:#fff; }
+header { text-align:center; padding:80px 20px; background:linear-gradient(135deg,#6366f1,#06b6d4); }
+header h1 { font-size:3rem; }
+header p { font-size:1.2rem; margin:10px 0; }
+section { padding:50px 20px; max-width:1100px; margin:auto; opacity:0; transform:translateY(40px); transition:all 0.8s ease; }
+section.visible { opacity:1; transform:translateY(0); }
+h2 { color:#38bdf8; margin-bottom:20px; }
+.card { background:#1e293b; padding:20px; border-radius:12px; margin-bottom:20px; }
+.skills img { width:50px; margin:10px; transition:transform 0.3s; }
+.skills img:hover { transform:scale(1.2); }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; }
+.item { background:#1e293b; padding:15px; border-radius:10px; transition:transform 0.3s, box-shadow 0.3s; }
+.item:hover { transform:translateY(-8px); box-shadow:0 10px 20px rgba(0,0,0,0.3); }
+a { color:#38bdf8; text-decoration:none; }
+footer { text-align:center; padding:20px; background:#020617; }
+.highlight { color:#22c55e; }
+</style>
+</head>
+<body>
 
-			<!-- The new page dummy; this would be dynamically loaded content -->
-			
-			<!-- <div class="container" id="page-2">
-					<a class="pageload-link" href="#page-1">Go back</a>
-					<section>
-							<h3	class="teal">Professional Experience</h3>
-							<div class="prof_div">
-									<p>I am working for Samsung Research and Development as Senior Software Engineer working on products like Tizen Web Apps,S Browser,My Galaxy Videos from Last two years</p>
-						<p>Before this I was working as Software Engineer with Mercury Minds Pvt Ltd working on Software products like Ezeassist.com, try job protal etc</p>
-					
-							</div>
-					</section>
-				<section>
-							<h3	class="teal">Educational Details</h3>
-							<div class="prof_div">
-							<p>I am a IT graduate, Since beginning my journey I have been working with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually improving my chops.</p>
+<header>
+<h1>Satish Singh</h1>
+<p>Lead Frontend Engineer | 10+ Years Experience</p>
+<p>I design scalable, high-performance web & TV applications with strong focus on UX and performance.</p>
+<p>
+<a href="#about">About</a> |
+<a href="#skills">Skills</a> |
+<a href="#experience">Experience</a> |
+<a href="#projects">Projects</a>
+</p>
+<p>
+<a href="https://twitter.com/satishsingh03">Twitter</a> |
+<a href="https://www.facebook.com/satish.singh.773981">Facebook</a> |
+<a href="https://www.linkedin.com/in/satish-singh-15406b39/">LinkedIn</a>
+</p>
+<p><a href="https://drive.google.com/file/d/1PxOYQB78PbRWyGD1pRaWZmibGIV7kcWl/view" target="_blank">Download Resume</a></p>
+</header>
 
-							</div>
-							<div class="card">
-									<div class="prof_div">
-											<p><span class="card-title"><a href="http://www.nehu.ac.in" class="teal-text hoverline">North Eastern Hill University</a></span></p>
-											<p class="brown-text">Shillong, Meghalaya</p>
-											<p>B Tech Information Technology</p>
-										  </div>
-							</div>
-				</section>
-				
-			</div> -->
+<section id="about">
+<h2>About Me</h2>
+<div class="card">
+<p>Frontend specialist with 10+ years of experience across Web, Smart TV platforms (LG webOS, Samsung Tizen), and enterprise applications. Strong expertise in React ecosystem, performance optimization, and scalable UI architecture.</p>
+<p class="highlight">✔ Built production-grade apps used by millions on Smart TVs</p>
+<p class="highlight">✔ Led frontend teams and delivered complex migrations (Angular → React)</p>
+<p class="highlight">✔ Extensively use GitHub Copilot to accelerate development, improve code quality, and enhance productivity</p>
+</div>
+</section>
 
-			 <section class="bg-primary">
-				<!-- Overlay/Opacity: [class*="bg-"] > .background.dark or .light -->
-				<span class="background dark"  style="background-image:url('https://source.unsplash.com/oHrodCLNnU8/')"></span>
-				<div class="wrap">
-				  <div class="content-left bg-trans-dark fadeInUp">
-					<h2><strong>Full stack developer with a passion for thoughtful UI design and development.</strong></h2>
-					<div class="columnskills">
-						<img class="skillsimage" src="img/javascript_logo.png">
-						<img class="skillsimage" src="img/css3.png">
-						<img class="skillsimage" src="img/html5.png">
-						<img class="skillsimage" src="img/react.png">
-						<img class="skillsimage" src="img/angular.png">							
-						<img class="skillsimage" src="img/vue.png">
-						<img class="skillsimage" src="img/mysql-php-logos.png">
-				    </div>
-				  </div>
-				</div>
-				<!-- .end .wrap -->
-			  </section>
-			 <section>
-				<div class="wrap">
-				  <h2>Experience</h2>
-				  <ul class="flexblock border blink">
-					  <li>
-					  <a href="">
-						<h2>LG Soft India - Lead Software Engineer</h2>
-						
-					
-						<h3>Technologies used: </h3>React, Redux, Enact, HTML, CSS3, Javascript, Python(Basics)<br/>
-						Aug 2023 – till Date<br/>
-					  </a>
-					</li>
-					<li>
-					  <a href="">
-						<h2>Indyfin - Lead Software Engineer</h2>
-						
-					
-						<h3>Technologies used: </h3>Vue, Vuex, Vuetify, HTML, CSS3, Chargebee, Echarts<br/>
-						May 2022 – July 2023 <br/>
-					  </a>
-					</li>
-					<li>
-						<a href="">
-						  <h2>Recrosoft- Lead Software Engineer</h2>
-						  
-					  
-						  <h3>Technologies used: </h3>
-						  Angular to React Migration, Echarts, HTML, CSS3
-						  <br/>
-						  Jan 2021 - April 2022
-						</a>
-					  </li>
-					  <li>
-						<a href="">
-						  <h2>Brillio Technologies - Senior Engineer</h2>
-						  <h3>Technologies used: </h3>
-						  Angular2+, React, Jasmine, Karma, HTML, CSS3<br/>
-						  Feb2019 -Jan2021
-						</a>
-					  </li>
-					  <li>
-						<a href="">
-						  <h2> Global Edge Software( Samsung as Client)</h2>
-						  <h3>Technologies used: </h3>
-						  Angular JS 1.x, React, JavaScript, jQuery, HTML, CSS3, Tizen web apps<br/>
-						  Dec 2016 –Feb 2019
-						</a>
-					  </li>
-					  <li>
-						<a href="">
-						  <h2> Mercury Minds -Software Engineer</h2>
-						  <h3>Technologies used: </h3>
-						  AngularJS 1.x, JavaScript, jQuery, HTML, CSS3, PHP, MySQL<br/>
-						  May 2015 –Dec 2016
-						</a>
-					  </li>
-				  </ul>
-				</div>
-				<!-- .end .wrap -->
-			  </section>
-			</article>
-		</main>
-			  </div>
-			<div id="loader" class="pageload-overlay" data-opening="M20,15 50,30 50,30 30,30 Z;M0,0 80,0 50,30 20,45 Z;M0,0 80,0 60,45 0,60 Z;M0,0 80,0 80,60 0,60 Z" data-closing="M0,0 80,0 60,45 0,60 Z;M0,0 80,0 50,30 20,45 Z;M20,15 50,30 50,30 30,30 Z;M30,30 50,30 50,30 30,30 Z">
-				<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 80 60" preserveAspectRatio="none">
-					<path d="M30,30 50,30 50,30 30,30 Z"/>
-				</svg>
-			</div><!-- /pageload-overlay -->
-			
-		</div><!-- /pagewrap -->
-		<script src="js/classie.js"></script>
-		<script src="js/svgLoader.js"></script>
-		<script>
-			(function() {
-				var pageWrap = document.getElementById( 'pagewrap' ),
-					pages = [].slice.call( pageWrap.querySelectorAll( 'div.container' ) ),
-					currentPage = 0,
-					triggerLoading = [].slice.call( pageWrap.querySelectorAll( 'a.pageload-link' ) ),
-					loader = new SVGLoader( document.getElementById( 'loader' ), { speedIn : 100 } );
-					//loader.show();
-				function init() {
-					triggerLoading.forEach( function( trigger ) {
-						trigger.addEventListener( 'click', function( ev ) {
-							ev.preventDefault();
-							loader.show();
-							// after some time hide loader
-							setTimeout( function() {
-								loader.hide();
+<section id="skills">
+<h2>Skills</h2>
+<div class="card skills">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" />
+</div>
+<div class="card">
+<p><strong>Core:</strong> React, Redux, JavaScript (ES6+), HTML5, CSS3</p>
+<p><strong>Frameworks:</strong> Angular, Vue, Enact</p>
+<p><strong>Testing:</strong> Jest, React Testing Library, Jasmine, Karma</p>
+<p><strong>Platforms:</strong> LG webOS, Samsung Tizen</p>
+<p><strong>Tools:</strong> GitHub Copilot, VS Code, Git, CI/CD</p>
+</div>
+</section>
 
-								classie.removeClass( pages[ currentPage ], 'show' );
-								// update..
-								currentPage = currentPage ? 0 : 1;
-								classie.addClass( pages[ currentPage ], 'show' );
+<section id="experience">
+<h2>Experience</h2>
+<div class="grid">
+<div class="item">
+<h3>LG Soft India - Lead Software Engineer</h3>
+<p>React, Redux, Enact</p>
+<p>Aug 2023 – Present</p>
+<p>• Developing scalable Smart TV applications on LG webOS platform</p>
+<p>• Optimizing performance for low-memory and remote-navigation environments</p>
+<p>• Driving frontend architecture and best practices across teams</p>
+<p>• Collaborating with cross-functional teams for feature delivery and UX improvements</p>
+</div>
+<div class="item">
+<h3>Indyfin - Lead Software Engineer</h3>
+<p>Vue, Vuex, Vuetify, Echarts</p>
+<p>May 2022 – July 2023</p>
+<p>• Built advanced financial dashboards with interactive data visualization</p>
+<p>• Integrated third-party tools like Chargebee for subscription workflows</p>
+<p>• Improved UI responsiveness and performance for large datasets</p>
+</div>
+<div class="item">
+<h3>Recrosoft - Lead Software Engineer</h3>
+<p>Angular → React Migration, Echarts</p>
+<p>Jan 2021 – April 2022</p>
+<p>• Led migration of large-scale Angular applications to React</p>
+<p>• Improved maintainability, scalability, and performance of UI systems</p>
+<p>• Developed reusable components and charting solutions using Echarts</p>
+</div>
+<div class="item">
+<h3>Brillio Technologies - Senior Engineer</h3>
+<p>Angular, React, Jasmine, Karma</p>
+<p>Feb 2019 – Jan 2021</p>
+<p>• Led development of enterprise-grade web applications for global clients</p>
+<p>• Built reusable UI component libraries to accelerate development across teams</p>
+<p>• Improved application performance through lazy loading, code splitting, and optimization techniques</p>
+<p>• Implemented unit & integration testing using Jasmine and Karma, increasing code reliability</p>
+<p>• Collaborated with backend and UX teams to deliver scalable, user-friendly solutions</p>
+</div>
+<div class="item">
+<h3>Samsung (via Global Edge)</h3>
+<p>AngularJS, React, Tizen Web Apps</p>
+<p>Dec 2016 – Feb 2019</p>
+<p>• Developed system applications for Samsung Smart TVs using Tizen platform</p>
+<p>• Built and optimized browser-based apps like S Browser and media applications</p>
+<p>• Focused on performance tuning for embedded devices</p>
+</div>
+<div class="item">
+<h3>Mercury Minds - Software Engineer</h3>
+<p>AngularJS, JavaScript, PHP, MySQL</p>
+<p>May 2015 – Dec 2016</p>
+<p>• Developed web applications and portals using AngularJS and PHP</p>
+<p>• Built REST-based integrations and database-driven features</p>
+<p>• Worked on end-to-end feature delivery from UI to backend</p>
+</div>
+</div>
+</section>
 
-							}, 2000 );
-						} );
-					} );	
-				}
+<section id="projects">
+<h2>Key Projects</h2>
+<div class="grid">
+<div class="item">
+<h3>Smart TV Streaming App</h3>
+<p>Optimized UI for remote navigation & low memory devices</p>
+</div>
+<div class="item">
+<h3>Finance Analytics Dashboard</h3>
+<p>Built scalable charts & insights using Echarts</p>
+</div>
+<div class="item">
+<h3>Angular to React Migration</h3>
+<p>Improved performance and reduced bundle size significantly</p>
+</div>
+</div>
+</section>
 
-				init();
-				//document.getElementById( 'loader' ).style.display='none';
+<section id="education">
+<h2>Education</h2>
+<div class="card">
+<p>B.Tech in Information Technology</p>
+<p>North Eastern Hill University, Shillong</p>
+</div>
+</section>
 
-			})();
-		//	loader.hide();
+<footer>
+<p>© 2026 Satish Singh</p>
+</footer>
 
-		function onReady(callback) {
-           let intervalID = window.setInterval(checkReady, 1000);
+<script>
+const sections = document.querySelectorAll('section');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.2 });
+sections.forEach(section => observer.observe(section));
+</script>
 
-			function checkReady() {
-				if (document.getElementsByTagName('body')[0] !== undefined) {
-					window.clearInterval(intervalID);
-					callback.call(this);
-				}
-			}
-		}
-
-		function show(id, value) {
-			document.getElementById(id).style.display = value ? 'block' : 'none';
-		}
-
-		onReady(function () {
-			show('pagewrap', true);
-			show('loading', false);
-		});
-		</script>
-
-    <!-- Required -->
-    <script src="static/js/webslides.js"></script>
-
-    <script>
-      window.ws = new WebSlides();
-    </script>
-
-    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
-    <script defer src="static/js/svg-icons.js"></script>
-	</body>
+</body>
 </html>
